@@ -41,7 +41,7 @@ void loop() {
   sensors_event_t temp;
   mpu.getEvent(&accel, &gyro, &temp);
 
-  Serial.print(2*voltage_piezo, 4); // Multiplicado por dos por el divisor resistor
+  Serial.print(voltage_piezo, 4); // Multiplicado por dos por el divisor resistor
   Serial.print(";");
   Serial.print(accel.acceleration.x, 2);
   Serial.print(";");
