@@ -22,7 +22,7 @@ void setup() {
 void loop() {
   // Leer A1 respecto a GND (modo no diferencial)
   int16_t raw_piezo = ads.readADC_SingleEnded(0);  // Canal 1 → A1
-  int16_t raw_res = ads.readADC_SingleEnded(3);  // Canal 1 → A3
+  int16_t raw_res = ads.readADC_SingleEnded(1);  // Canal 1 → A3
 
 
   // Convertir a voltaje (0.1875 mV/bit para GAIN_TWOTHIRDS)
@@ -33,7 +33,7 @@ void loop() {
   Serial.print(voltage_piezo, 4);  // Imprimir voltaje con 4 decimales
   Serial.print(",");
   Serial.print(voltage_res,4);
-  Serial.println(" V");
+  Serial.println("");
 
   delay(500);
 }
