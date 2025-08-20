@@ -1,0 +1,1 @@
+se ocuparon 4 módulos LTC, con un piezo en c/u. se conectaron en serie y se midieron. considerar que hay un cierto ruido que eliminar antes de hacer el cálculo. se midió el "ruido del ambiente" con una FFT, se encontró que los peaks de frecuencia no superan la mitad del tiempo de muestreo del Arduino DUE, Nyquist descansa en su tumba tranquilo.
